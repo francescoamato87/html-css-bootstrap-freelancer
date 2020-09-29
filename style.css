@@ -1,0 +1,105 @@
+/* GENERAL */
+
+/* main-header */
+.main-header .navbar{
+  background: #2c3e50;
+  border:none;
+  border-radius: 0;
+
+}
+
+.main-header .navbar-brand{
+height: 80px;
+line-height: 80px;
+padding: 0 15px;
+text-transform: uppercase;
+font-size: 26px;
+color: #fff;
+font-weight: bold;
+}
+
+.main-header .navbar-nav > li > a{
+  line-height: 80px;
+  padding: 0 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background .4s;
+}
+
+.main-header .navbar-nav > li > a:hover,
+.main-header .navbar-nav > .active > a{
+  background: rgba(0,0,0, .2)
+}
+
+.main-header .navbar-nav > .active > a:hover{
+  background: rgba(0,0,0, .5);
+}
+
+.main-form{
+  height:350px;
+  margin-top: 80px;
+}
+
+.main-form h1{
+  color:#2c3e50;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+/* FORM STYLES */
+
+.register-form{
+  margin:30px 0;
+}
+.register-form .form-group{
+margin-bottom: 30px;
+}
+
+.register-form .form-group label{
+  color: #5cc7cb;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="number"],
+.register-form textarea{
+  font-size: 28px;
+  border:0;
+  border-bottom: 1px solid #ddd;
+  box-shadow: none;
+  outline: none;
+  border-radius: 0;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="number"]:focus,
+.register-form textarea:focus {
+  border-color: #000;
+  box-shadow: none;
+
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="number"]{
+  height: 60px;
+  line-height: 60px;
+  padding:0;
+}
+
+.register-form textarea{
+  height: 300px;
+  padding: 15px 0;
+
+}
+
+.main-form .btn{
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  color:white;
+}

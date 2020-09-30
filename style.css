@@ -1,4 +1,82 @@
 /* GENERAL */
+body{
+  padding-top:90px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+/* Utilities */
+section{
+  padding-top:100px;
+  padding-bottom:100px;
+}
+
+.section-green{
+  background: #1abc9c;
+  color:#fff;
+}
+
+.mb-30{
+  margin-bottom: 30px;
+}
+/* Typography */
+
+h1, h2, h3, h4, h5, h6{
+  margin-top:0;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+h1{
+  font-size: 65px;
+  text-transform: uppercase;
+
+}
+
+h2{
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 20px;
+}
+
+/* Buttons */
+
+.btn{
+  padding:16px 25px;
+  font-size: 22px;
+  border-radius: 7px;
+  transition: background .4s;
+  border-color: transparent;
+}
+
+.btn-primary{
+  background: #1abc9c;
+}
+
+.btn-primary:hover{
+  background: #3d8f7f;
+}
+
+.btn-outline{
+  color: white;
+  border:2px solid;
+}
+
+.btn-outline:hover{
+  background: white;
+  border-color:white;
+}
+
+.btn .icon-left i{
+  margin-right:8px;
+}
+
+
 
 /* main-header */
 .main-header .navbar{
@@ -37,16 +115,111 @@ font-weight: bold;
   background: rgba(0,0,0, .5);
 }
 
-.main-form{
-  height:350px;
-  margin-top: 80px;
-}
 
 .main-form h1{
   color:#2c3e50;
   font-weight: bold;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
+
+/* Hero */
+.hero-image{
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.hero h1{
+  font-weight: bold;
+}
+
+.hero h3{
+  font-weight: 400px;
+}
+
+/* star-divider */
+
+.star-divider{
+  width:300px;
+  max-width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.star-divider::before,
+.star-divider::after{
+  content: '';
+  display:inline-block;
+  height:4px;
+  width: 30%;
+  background: white;
+  border-radius: 2px;
+
+}
+
+.star-divider i.fa-star{
+  display: inline-block;
+  width:20%;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.star-divider.star-blue::before,
+.star-divider.star-blue::after{
+background: #333;
+}
+
+.star-divider .star-blue i.fa-star{
+  color: #333;
+}
+
+.portfolio h2{
+  font-weight: bold;
+}
+
+/* portfolio */
+.portfolio-item{
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor:pointer;
+  overflow: hidden;
+}
+
+.portfolio-layover{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(26, 188, 156, 0.7);
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+.portfolio-layover i{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color:#fff;
+}
+
+.portfolio-item:hover .portfolio-layover{
+  opacity:1;
+}
+
+/* About */
+.about .left{
+  padding-right: 15px;
+
+}
+
+.about .right{
+  padding-left:15px;
+
+}
+
 
 /* FORM STYLES */
 
@@ -102,4 +275,46 @@ margin-bottom: 30px;
   background-color: #1abc9c;
   border-color: #1abc9c;
   color:white;
+}
+
+
+/* FOOTER */
+
+
+.main-footer{
+  color:#fff;
+}
+
+.footer-pre{
+  background: #2c3e50;
+  padding:60px 0;
+}
+
+.footer-box .social a{
+  display: inline-block;
+  width: 55px;
+  height:55px;
+  font-size:20px;
+  line-height:52px;
+  color:#fff;
+  border-radius:50%;
+  border: 2px solid;
+}
+
+.main-footer .link-green{
+  color: #1abc9c;
+}
+
+.main-footer .link-green:hover{
+  color: #3d8f7f;
+}
+
+.footer-sub{
+  padding:20px 0;
+  background: #1a252f;
+}
+
+.footer-sub p{
+  margin:0;
+  font-size: 12px;
 }
